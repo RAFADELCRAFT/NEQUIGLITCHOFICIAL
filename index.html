@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activación y Envío</title>
+    <title>Nequi Simulador</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Pantalla de Login -->
-        <div id="login-screen">
-            <h1>Iniciar Sesión</h1>
-            <input type="text" id="phone" placeholder="Número de Teléfono">
-            <input type="password" id="pin" placeholder="Clave (4 dígitos)">
-            <button onclick="requestActivation()">Solicitar Activación</button>
+    <!-- Pantalla de inicio de sesión -->
+    <div class="login-screen">
+        <h1>Nequi</h1>
+        <input type="text" id="phone" placeholder="Número de teléfono">
+        <input type="password" id="pin" placeholder="Clave">
+        <button id="login-btn" class="btn-main">Iniciar sesión</button>
+    </div>
+
+    <!-- Pantalla después del login -->
+    <div class="dashboard hidden">
+        <div class="header">
+            <h2>Bienvenido, <span id="user-name"></span></h2>
+        </div>
+        
+        <div class="form-panel">
+            <h3>Generar Comprobante</h3>
+            <input type="text" id="name" placeholder="Nombre del destinatario">
+            <input type="text" id="number" placeholder="Número del destinatario">
+            <input type="number" id="amount" placeholder="Cantidad a enviar">
+            <button id="generate-btn" class="btn-main">Generar Comprobante</button>
         </div>
 
-        <!-- Panel Principal -->
-        <div id="main-screen" style="display: none;">
-            <h1>Enviar Dinero</h1>
-            <input type="text" id="name" placeholder="Nombre del Destinatario">
-            <input type="text" id="recipient-number" placeholder="Número del Destinatario">
-            <input type="text" id="amount" placeholder="Monto a Enviar" oninput="formatAmount()">
-            <button onclick="generateReceipt()">Generar Comprobante</button>
-        </div>
-
-        <!-- Pantalla de Comprobante -->
-        <div id="receipt-screen" style="display: none;">
-            <h1>Envío Realizado</h1>
-            <p id="receipt-content"></p>
-            <button onclick="goBack()">Volver</button>
+        <div class="comprobante hidden">
+            <div class="comp-header">
+                <h3>Comprobante Nequi</h3>
+            </div>
+            <div class="comp-details">
+                <p><strong>Nombre:</strong> <span id="comp-name"></span></p>
+                <p><strong>Número:</strong> <span id="comp-number"></span></p>
+                <p><strong>Monto:</strong> <span id="comp-amount"></span></p>
+            </div>
+            <div class="comp-footer">
+                <button class="btn-main">Compartir Comprobante</button>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
