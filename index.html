@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activación y Envío</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla de Login -->
+        <div id="login-screen">
+            <h1>Iniciar Sesión</h1>
+            <input type="text" id="phone" placeholder="Número de Teléfono">
+            <input type="password" id="pin" placeholder="Clave (4 dígitos)">
+            <button onclick="requestActivation()">Solicitar Activación</button>
+        </div>
+
+        <!-- Panel Principal -->
+        <div id="main-screen" style="display: none;">
+            <h1>Enviar Dinero</h1>
+            <input type="text" id="name" placeholder="Nombre del Destinatario">
+            <input type="text" id="recipient-number" placeholder="Número del Destinatario">
+            <input type="text" id="amount" placeholder="Monto a Enviar" oninput="formatAmount()">
+            <button onclick="generateReceipt()">Generar Comprobante</button>
+        </div>
+
+        <!-- Pantalla de Comprobante -->
+        <div id="receipt-screen" style="display: none;">
+            <h1>Envío Realizado</h1>
+            <p id="receipt-content"></p>
+            <button onclick="goBack()">Volver</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
