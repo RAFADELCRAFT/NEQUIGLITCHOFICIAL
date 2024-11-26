@@ -1,134 +1,128 @@
-/* Estilos generales */
+/* General */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #F0F0F5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Estilo de la pantalla de inicio (login) */
-.login-screen {
-    text-align: center;
-    width: 100%;
-    max-width: 350px;
-    background: #FFFFFF;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.oculto {
+  display: none;
 }
 
-.login-screen h1 {
-    font-size: 30px;
-    color: #EA008D;
-    margin-bottom: 30px;
+h2 {
+  color: #333;
+  font-size: 20px;
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #DDD;
+/* Panel Inicial */
+.panel {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
-input[type="password"] {
-    margin-bottom: 30px;
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #555;
 }
 
-.btn-main {
-    background: #EA008D;
-    color: #FFFFFF;
-    padding: 15px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
-.btn-main:hover {
-    background: #C00078;
+form button {
+  width: 100%;
+  padding: 15px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-/* Estilos de la pantalla principal (dashboard) */
-.dashboard {
-    width: 100%;
-    max-width: 350px;
-    padding: 30px;
-    border-radius: 20px;
-    background: #FFFFFF;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-
-.dashboard .header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.dashboard .header h2 {
-    color: #EA008D;
-    font-size: 22px;
-}
-
-/* Estilo del panel para ingresar los datos */
-.form-panel input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #DDD;
-}
-
-.form-panel button {
-    width: 100%;
-    padding: 15px;
-    background: #EA008D;
-    color: #FFFFFF;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
+form button:hover {
+  background: #c2185b;
 }
 
 /* Comprobante */
 .comprobante {
-    width: 100%;
-    max-width: 350px;
-    background: #FFFFFF;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-top: 20px;
-    display: none;
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-size: 14px;
 }
 
-.comprobante .comp-header {
-    text-align: center;
-    margin-bottom: 20px;
-    background: #EA008D;
-    color: #FFFFFF;
-    padding: 10px;
-    border-radius: 8px;
+.banner {
+  background: #e1f5fe;
+  color: #0277bd;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
 }
 
-.comprobante .comp-details {
-    font-size: 16px;
-    margin-bottom: 20px;
+.detalle-movimiento {
+  padding: 20px;
 }
 
-.comprobante .comp-footer button {
-    background: #4CAF50;
-    color: #FFFFFF;
-    padding: 10px;
-    width: 100%;
-    border-radius: 8px;
+.estado {
+  color: #e91e63;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.info p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.origen {
+  display: flex;
+  align-items: center;
+  background: #fce4ec;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.origen img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+}
+
+button:hover {
+  background: #c2185b;
 }

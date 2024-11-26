@@ -1,0 +1,9 @@
+function mostrarClave() {
+  const numero = document.getElementById("numero").value;
+  if (numero.trim() !== "") {
+    document.getElementById("login-container").classList.add("oculto");
+    document.getElementById("clave-container").classList.remove("oculto");
+  } else {
+    alert("Por favor, ingresa un número válido.");
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Fondo de burbujas -->
+  <div class="bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Formulario de login -->
+  <div class="login-container" id="login-container">
+    <h2>Inicia sesión</h2>
+    <form id="login-form">
+      <label for="numero">Número de Teléfono:</label>
+      <input type="text" id="numero" placeholder="Ingresa tu número" required>
+      <button type="button" onclick="mostrarClave()">Continuar</button>
+    </form>
+  </div>
+
+  <!-- Formulario de clave -->
+  <div class="clave-container oculto" id="clave-container">
+    <h2>Ingresa tu clave</h2>
+    <form id="clave-form">
+      <label for="clave">Clave:</label>
+      <input type="password" id="clave" placeholder="●●●●●●" required>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
+
