@@ -1,128 +1,123 @@
-/* General */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  background-color: #1c001e;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-.oculto {
-  display: none;
+#inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h2 {
-  color: #333;
-  font-size: 20px;
-}
-
-/* Panel Inicial */
-.panel {
-  width: 90%;
-  max-width: 400px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-}
-
-form label {
-  display: block;
-  margin: 10px 0 5px;
-  font-size: 14px;
-  color: #555;
-}
-
-form input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  font-size: 14px;
-}
-
-form button {
-  width: 100%;
-  padding: 15px;
-  background: #e91e63;
-  color: white;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-form button:hover {
-  background: #c2185b;
-}
-
-/* Comprobante */
-.comprobante {
-  width: 90%;
-  max-width: 400px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  font-size: 14px;
-}
-
-.banner {
-  background: #e1f5fe;
-  color: #0277bd;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-}
-
-.detalle-movimiento {
-  padding: 20px;
-}
-
-.estado {
-  color: #e91e63;
+.logo {
+  font-size: 2.5rem;
   font-weight: bold;
-  text-transform: uppercase;
+  color: white;
   margin-bottom: 20px;
 }
 
-.info p {
-  margin: 10px 0;
-  font-size: 14px;
-  color: #333;
-}
-
-.origen {
+.input-group {
+  margin-bottom: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  background: #fce4ec;
-  border-radius: 5px;
+}
+
+.input-group input {
+  width: 80%;
   padding: 10px;
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.origen img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-button {
-  width: 100%;
-  padding: 15px;
-  background: #e91e63;
-  color: white;
   border: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 0 0 10px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-button:hover {
-  background: #c2185b;
+.button {
+  width: 80%;
+  padding: 10px;
+  background-color: #ff0a72;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Estilos del PIN */
+#pin .pin-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#pin .pin-inputs input {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  color: white;
+}
+
+#pin .pin-instruction {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+#pin .number-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#pin .number-pad button {
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#pin .number-pad button:hover {
+  background-color: #ff0a72;
+}
+
+#pin .forgot-pin {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* Confirmación de cuenta */
+#confirmation h1 {
+  font-size: 2.5rem;
+  color: #ff0a72;
+  margin-bottom: 20px;
+}
+
+#confirmation p {
+  font-size: 1.5rem;
+  color: #ccc;
 }
